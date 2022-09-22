@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>devCoffee</title>
+  </head>
+  <body>
+    <div class="filter-wrapper">
+      <img
+        src="https://pm1.narvii.com/6394/59c5aa5210ce3822e047882f0f74a193eed9eea0_hq.jpg"
+      />
+      <div>
+        <h1>devCoffee</h1>
+        <input placeholder="pesquisar" id="input-pesquisar" />
+        <select id="filter-type-select" value="marca">
+          <option value="titulo">nome</option>
+          <option value="preco">preço</option>
+          <option value="categoria">categoria</option>
+          <option value="pais">pais</option>
+          <option value="quantidade">quantidade</option>
+        </select>
+      </div>
+      <button id="search-button">buscar</button>
+    </div>
+    <div id="root"></div>
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+  <footer>
+    <div class="footer">
+      <h3>Avenida de Pruneridge, 19111 Cupertino, CA 95014</h3>
+    </div>
+  </footer>
+</html>

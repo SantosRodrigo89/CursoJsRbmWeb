@@ -9,7 +9,6 @@
   </head>
 
   <header>
-    
     <div class="filter-wrapper">
       <div class="logoNome">
         <img class="logo" src="imagens/cafe.png" alt="logo marca" width="8%" />
@@ -17,19 +16,39 @@
       </div>
 
       <div class="conjuntoBusca">
-     
-          <input class="inputBusca" placeholder="pesquisar" id="input-pesquisar" />
+        <input
+          class="inputBusca"
+          placeholder="pesquisar"
+          id="input-pesquisar"
+        />
 
-          <select class="inputBusca" id="filter-type-select" value="marca">
-            <option value="titulo">nome</option>
-            <option value="preco">preço</option>
-            <option value="categoria">categoria</option>
-            <option value="pais">pais</option>
-          </select> 
-        
+        <select class="inputBusca" id="filter-type-select" value="marca">
+          <option value="titulo">nome</option>
+          <option value="preco">preço</option>
+          <option value="categoria">categoria</option>
+          <option value="pais">pais</option>
+        </select>
         <button class="buton" id="search-button">buscar</button>
       </div>
     </div>
+
+    <video
+      autoplay="true"
+      loop="loop"
+      playsinline="true"
+      muted="true"
+      data-video-player-target="player"
+      class="plyr__video"
+    >
+      <source
+        src="https://static.vecteezy.com/system/resources/previews/002/021/739/mp4/slowly-pouring-coffee-free-video.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="https://static.vecteezy.com/system/resources/previews/002/021/739/slowly-pouring-coffee-free-video.webm"
+        type="video/webm"
+      />
+    </video>
   </header>
 
   <body>

@@ -77,6 +77,7 @@ const rootElement = document.querySelector("#root");
 const searchButtonElement = document.querySelector("#search-button");
 const searchInputElement = document.querySelector("#input-pesquisar");
 const searchTypeElement = document.querySelector("#filter-type-select");
+
 function render(itens) {
     if (rootElement) {
         rootElement.innerHTML = "";
@@ -96,9 +97,9 @@ function render(itens) {
     }
 }
 function search() {
-    const searchInputValue = searchInputElement.value;
+    const searchInputValue = searchInputElement.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
     const filterTypeValue = searchTypeElement.value;
-    const newBlusas = blusas.filter((blusa) => blusa[filterTypeValue].includes(searchInputValue));
+    const newBlusas = blusas.filter((blusa) => blusa[filterTypeValue].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(searchInputValue));
     render(newBlusas);
 }
 function eventListenerHandle() {

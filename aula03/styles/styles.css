@@ -30,7 +30,6 @@ body {
 .plyr__video {
   width: 100vw;
   box-shadow: 10px 10px 11px -3px rgba(217, 181, 102, 0.57);
-  
 }
 
 .item-wrapper {
@@ -87,11 +86,11 @@ body {
 }
 
 .buton:hover {
-  background-color: #3e8e41;
+  background-color: #e6e6e6;
 }
 
 .buton:active {
-  background-color: #3e8e41;
+  background-color: #e6e6e6 ;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -103,10 +102,12 @@ body {
 .inputBusca {
   float: right;
   padding: 6px;
-  border: none;
+  border: 1px solid #434343;
   margin-top: 8px;
   margin-right: 8px;
   font-size: 17px;
+  background-color: #030303;
+  color: #e6e6e6;
 }
 
 .footer {
